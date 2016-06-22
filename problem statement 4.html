@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+<head>
+<script>
+function getMinMax()
+{
+	var arnum=[8,4,3,7,15,11,12,45,75,58,1,9,25] ;
+var minum=arnum[0];
+var maxnum=arnum[0];
+for(var i=0;i<arnum.length;i++)
+{
+	if(minum>arnum[i])
+	minum=arnum[i];
+	if(maxnum<arnum[i])
+	maxnum=arnum[i];
+
+}
+document.getElementById('p1').innerHTML='Array is :'+arnum;
+document.getElementById('minnum').innerHTML='Minimum number is :'+minum;
+
+document.getElementById('maxnum').innerHTML='Maximum number is :'+maxnum;
+
+
+}
+</script>
+</head>
+
+<body>
+<p id="p1"></p>
+<br>
+<br>
+<p id="minnum"></p>
+<br>
+<br>
+<p id="maxnum"></p>
+<script >
+getMinMax();
+</script>
+
+
+</body>
+</html>
